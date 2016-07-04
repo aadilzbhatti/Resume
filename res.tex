@@ -1,0 +1,190 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.2 (3/28/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute
+% (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Modified by:
+% Daniel L Marks <xleafr@gmail.com> 3/28/2015
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can have multiple style options the legal options ones are:
+%
+%   centered:	the name and address are centered at the top of the page
+%				(default)
+%
+%   line:		the name is the left with a horizontal line then the address to
+%				the right
+%
+%   overlapped:	the section titles overlap the body text (default)
+%
+%   margin:		the section titles are to the left of the body text
+%
+%   11pt:		use 11 point fonts instead of 10 point fonts
+%
+%   12pt:		use 12 point fonts instead of 10 point fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[margin]{res}
+
+% Default font is the helvetica postscript font
+\usepackage{helvet}
+
+% Increase text height
+\textheight=700pt
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\name{Aadil Bhatti}
+
+% Note that addresses can be used for other contact information:
+% -phone numbers
+% -email addresses
+% -linked-in profile
+
+\address{601 S. 6th St\\Champaign, IL 61820\\}
+\address{abhatti2@illinois.edu\\847.363.0768\\linkedin.com/in/aadilbhatti}
+
+% Uncomment to add a third address
+%\address{Address 3 line 1\\Address 3 line 2\\Address 3 line 3}
+%-------------------------------------------------------------------------------
+
+\begin{resume}
+
+%-------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+\section{EDUCATION}
+\textbf{University of Illinois at Urbana-Champaign}, Urbana-Champaign, IL\\
+{\sl Bachelor of Science}, Mathematics and Computer Science, May 2017\hfill GPA:
+3.30
+\\
+Minor in Chemistry
+\\
+\\
+\textbf{Courses}: Data Structures, Computer Architecture, System Programming,
+Algorithms \& Models of Computation, Numerical Methods, Programming Languages
+\& Compilers
+
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%-------------------------------------------------------------------------------
+\section{PROJECTS}
+\par
+\textbf{Linux in the Browser}:
+An in-browser System Programming environment including a C compiler and working
+Linux terminal. Worked on the project under Professor Lawrence Angrave during
+Spring 2016 - Fall 2016. Role was to make C compiler / terminal more portable
+for other developers to use and develop a Jupyter-like frontend as a use case.
+
+\par
+\textbf{Chimr}:
+Built a ``smart'' doorbell at WildHacks 2015 which alerts the homeowner via text
+message that someone is at the door. Won \textbf{Best Use of Twilio API}. Potential
+uses include notification sent to parents to let them know that children have arrived
+home from school. Built with \textbf{Python/Flask, Twilio API, and Arduino}.
+
+\par
+\textbf{Rapsheet}:
+Built a full-stack web application to track \& analyze Twitter sentiment about music
+albums on Spotify. Goal was to search for trends between Twitter user opinions and
+Spotify album popularity. Made with \textbf{Python/Django, Spotify API, Alchemy API, and D3.js}.
+
+\par
+\textbf{Watdo}:
+Built a full-stack web application to track local events in town of Dekalb, IL during
+HuskieHacks 2015; won \textbf{Best Civic Sector Project}. Goal was to collect events
+from multiple sources across the town and aggregate them for people who are not as familiar
+with the town to look at. Made with \textbf{Meteor.js}.
+
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%-------------------------------------------------------------------------------
+\section{COMPUTER\\SKILLS}
+
+\textbf{Languages}: Java, Python, C++, C, Ruby, MATLAB
+\\
+\textbf{Web Development}: HTML, CSS, JavaScript, Django, Ruby on Rails, SQL,
+                          Meteor.js, Knockout.js, D3.js
+\\
+\textbf{Other Tools}: Android, Git/GitHub, Amazon Web Services (EC2, S3, DynamoDB), Arduino
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+% Modify the format of each position
+\begin{format}
+\title{l}\employer{r}\\
+\dates{l}\location{r}\\
+\body\\
+\end{format}
+%-------------------------------------------------------------------------------
+
+\section{EXPERIENCE}
+\employer{Capital One}
+\location{Urbana-Champaign, IL}
+\dates{February 2016 - Present}
+\title{\textbf{Software Engineering Intern}}
+\begin{position}
+Vivamus ullamcorper a lacus non laoreet. Etiam ultricies in est quis finibus.
+Curabitur posuere est quis felis sodales, vitae aliquam ex consequat. In non
+magna felis.
+\end{position}
+
+\employer{Employer One}
+\location{Location One}
+\dates{Dates One}
+\title{\textbf{Title One}}
+\begin{position}
+Donec venenatis volutpat tortor, quis fringilla turpis ornare et. Curabitur
+neque enim, facilisis vitae lacus non, malesuada volutpat tortor. Etiam
+elementum neque nibh, ac faucibus ligula tempor vel. Pellentesque a pharetra
+neque, vel facilisis nunc.
+\end{position}
+
+\employer{Employer One}
+\location{Location One}
+\dates{Dates One}
+\title{\textbf{Title One}}
+\begin{position}
+Mauris lacinia tellus vel elit lobortis, ut convallis tellus euismod. Praesent
+sagittis magna non nisl rutrum, dapibus mollis ante commodo. Donec scelerisque
+velit a consequat vehicula. Nam eget dignissim est, et varius arcu. Vivamus eu
+lacus feugiat, ullamcorper odio ut, blandit enim. Suspendisse potenti.
+Vestibulum auctor purus et massa luctus, quis cursus mauris laoreet. Praesent
+luctus dictum justo vitae dictum.
+\end{position}
+%-------------------------------------------------------------------------------
+%   Interests
+%-------------------------------------------------------------------------------
+\section{INTERESTS}
+Interest One, Interest Two, Interest Three, Interest Four, ...Et Cetera.
+%-------------------------------------------------------------------------------
+\end{resume}
+\end{document}
