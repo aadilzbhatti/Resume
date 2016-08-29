@@ -1,186 +1,146 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Graduate Curriculum Vitae
-% LaTeX Template
-% Version 1.2 (3/28/15)
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
 %
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Rensselaer Polytechnic Institute
-% (http://www.rpi.edu/dept/arc/training/latex/resumes/)
-%
-% Modified by:
-% Daniel L Marks <xleafr@gmail.com> 3/28/2015
-%
-% Important note:
-% This template requires the res.cls file to be in the same directory as the
-% .tex file. The res.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
 
-%-------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%-------------------------------------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% You can have multiple style options the legal options ones are:
-%
-%   centered:	the name and address are centered at the top of the page
-%				(default)
-%
-%   line:		the name is the left with a horizontal line then the address to
-%				the right
-%
-%   overlapped:	the section titles overlap the body text (default)
-%
-%   margin:		the section titles are to the left of the body text
-%
-%   11pt:		use 11 point fonts instead of 10 point fonts
-%
-%   12pt:		use 12 point fonts instead of 10 point fonts
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
-\documentclass[margin]{res}
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
-% Default font is the helvetica postscript font
-\usepackage{helvet}
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
-% Increase text height
-\textheight=700pt
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
+\usepackage{import}
+
+% personal data
+\name{Aadil}{Bhatti}
+\address{1737 Primrose Ln, Glenview, IL, 60026}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{1 (847) 363-0768}                   % optional, remove / comment the line if not wanted
+\email{abhatti2@illinois.edu}                               % optional, remove / comment the line if not wanted
+\homepage{linkedin.com/in/aadilbhatti}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
 \begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
 
-%-------------------------------------------------------------------------------
-%	NAME AND ADDRESS SECTION
-%-------------------------------------------------------------------------------
-\name{Aadil Bhatti}
+\section{Education}
 
-% Note that addresses can be used for other contact information:
-% -phone numbers
-% -email addresses
-% -linked-in profile
+\vspace{6pt}
+\cventry
+{Expected May 2016}
+{Mathematics \& Computer Science, Minor in Chemistry}
+{University of Illinois at Urbana-Champaign}
+{Champaign, IL}{}{GPA: 3.31}
 
-\address{601 S. 6th St\\Champaign, IL 61820\\}
-\address{abhatti2@illinois.edu\\847.363.0768\\linkedin.com/in/aadilbhatti}
+\section{Technical and Personal skills}
+\vspace{6pt}
+\begin{itemize}
+\item \textbf{Programming Languages:} Proficient in: C, C++, Python, Matlab, Arduino, TeX \\ Also basic ability with: Assembly, VBA, VHDL.
+\vspace{6pt}
+\item \textbf{Industry Software Skills:} SolidWorks (Advanced), Matlab (Advanced), Ansys (Intermediate),  LTspice (Intermediate), Most MS Office products including MS project and MS access (Advanced).
+\vspace{6pt}
+\item \textbf{General Business Skills:} Good presentation skills, Works well in a team.
+\vspace{6pt}
+\item \textbf{Other:} Good soldering and spot welding skills, Can write well organised and structured reports.
+\end{itemize}
 
-% Uncomment to add a third address
-%\address{Address 3 line 1\\Address 3 line 2\\Address 3 line 3}
-%-------------------------------------------------------------------------------
+\section{Experience}
+\vspace{6pt}
 
-\begin{resume}
+\cventry
+{February 2016--May 2016}
+{Software Engineering Intern}
+{Capital One}
+{Champaign, IL}{}
+{\vspace{3pt}
+\begin{itemize}
+  \item Examined utility of Juju Charms service orchestration tool and potential
+        uses within Capital One
+  \item Goal was to determine if Juju is feasible tool for deploying
+        applications to Amazon Web Services without needing extensive background
+        knowledge of AWS
+  \item Built simple web application in Django and deployed with Juju to
+        illustrate how tool works and how to use it
+\end{itemize}}
 
-%-------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%-------------------------------------------------------------------------------
-\section{EDUCATION}
-\textbf{University of Illinois at Urbana-Champaign}, Urbana-Champaign, IL\\
-{\sl Bachelor of Science}, Mathematics and Computer Science, May 2017\hfill GPA:
-3.30
-\\
-Minor in Chemistry
-\\
-\\
-\textbf{Courses}: Data Structures, Computer Architecture, System Programming,
-Algorithms \& Models of Computation, Numerical Methods, Programming Languages
-\& Compilers
+\vspace{2pt}
 
-%-------------------------------------------------------------------------------
+% \section{Interests and extra-curricular activity}
+%
+% \vspace{6pt}
+%
+% \begin{itemize}
+%
+% \item{I was a "fresher representative" in my 2nd and 3rd years of university, this required me to guide, look after, and ensure that a particular flat of first years have a good time in their first week, and feel consoled in what for most of them is there first time living away from home. We were responsible for the safety and wellbeing of the group of first years during the first week, and during this time I made good friends with all of them.}
+%
+% \vspace{6pt}
+%
+% \item{I am a member of a number of university societies. I was also the vice president and co-founder of the flash mob society. My roles in this included recruiting members, in which during "fresher's fair" we enlisted over 200 new members. This was regarded as very successful, considering other societies averaged around 50. I also appeared in an interview on the university television station, set up a society bank account, and helped organise the events. One of these events was featured in the local newspaper.}
+%
+% \vspace{6pt}
+%
+% \item{I am also an avid hiker, having completed the national 3 peaks challenge last summer. Other interest include guitar, which I am self-taught, and home brewing.}
+%
+% \end{itemize}
 
-%-------------------------------------------------------------------------------
-%	PROJECTS SECTION
-%-------------------------------------------------------------------------------
-\section{PROJECTS}
-\par
-\textbf{Linux in the Browser}:
-An in-browser System Programming environment including a C compiler and working
-Linux terminal. Worked on the project under Professor Lawrence Angrave during
-Spring 2016 - Fall 2016. Role was to make C compiler / terminal more portable
-for other developers to use and develop a Jupyter-like frontend as a use case.
+% \section{References}
+%
+% \vspace{6pt}
+%
+% \begin{itemize}
+%
+% \item{Up to 4 references available on request}
 
-\par
-\textbf{Chimr}:
-Built a ``smart'' doorbell at WildHacks 2015 which alerts the homeowner via text
-message that someone is at the door. Won \textbf{Best Use of Twilio API}. Potential
-uses include notification sent to parents to let them know that children have arrived
-home from school. Built with \textbf{Python/Flask, Twilio API, and Arduino}.
+% \end{itemize}
 
-\par
-\textbf{Rapsheet}:
-Built a full-stack web application to track \& analyze Twitter sentiment about music
-albums on Spotify. Goal was to search for trends between Twitter user opinions and
-Spotify album popularity. Made with \textbf{Python/Django, Spotify API, Alchemy API, and D3.js}.
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
 
-\par
-\textbf{Watdo}:
-Built a full-stack web application to track local events in town of Dekalb, IL during
-HuskieHacks 2015; won \textbf{Best Civic Sector Project}. Goal was to collect events
-from multiple sources across the town and aggregate them for people who are not familiar
-with the town to look at. Made with \textbf{Meteor.js}.
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
 
-%-------------------------------------------------------------------------------
+%-----       letter       ---------------------------------------------------------
 
-%-------------------------------------------------------------------------------
-%	COMPUTER SKILLS SECTION
-%-------------------------------------------------------------------------------
-\section{COMPUTER\\SKILLS}
-
-\textbf{Languages}: Java, Python, C++, C, Haskell, Ruby, MATLAB
-\\
-\textbf{Web Development}: HTML, CSS, JavaScript, Django, Ruby on Rails, SQL, Node,
-                          React, Meteor, jQuery, Knockout, D3
-\\
-\textbf{Mobile Development}: Android (Java, Android Studio),
-iOS (Swift, XCode)
-\\
-\textbf{Other Tools}: Git/GitHub, Amazon Web Services (EC2, S3, DynamoDB, Lambda),
-Arduino, Alexa Skills Kit (Amazon Echo)
-%-------------------------------------------------------------------------------
-
-%-------------------------------------------------------------------------------
-%	EXPERIENCE SECTION
-%-------------------------------------------------------------------------------
-% Modify the format of each position
-\begin{format}
-\title{l}\employer{r}\\
-\dates{l}\location{r}\\
-\body\\
-\end{format}
-%-------------------------------------------------------------------------------
-
-\section{EXPERIENCE}
-\employer{\textbf{Capital One}}
-\location{Urbana-Champaign, IL}
-\dates{February 2016 - Present}
-\title{\textbf{Software Engineering Intern}}
-\begin{position}
-Examined the utility of the Juju Charms service orchestration tool and its potential
-use within Capital One. Goal was to determine if Juju is a feasible tool for deploying
-applications to Amazon Web Services without needing extensive background knowledge as
-to how AWS works. Built simple web application in Django and deployed with Juju to
-illustrate how tool works and how to use it.
-\end{position}
-
-\employer{\textbf{PillSense}}
-\location{Chicago, IL}
-\dates{May 2015 - Present}
-\title{\textbf{Software Engineer}}
-\begin{position}
-PillSense is a healthcare startup devoted to tracking patient prescription adherence
-data in order address prescription abuse. We are currently designing a web application,
-a mobile application, and a sensor to track the weights of pill bottles. My role in the
-startup was, as the sole software engineer in a team of five, to build the web application
-for which care providers can access patient data.
-
-\end{position}
-%-------------------------------------------------------------------------------
-%   Interests
-%-------------------------------------------------------------------------------
-% \section{INTERESTS}
-% Web development, artificial intelligence, machine learning, numerical computing,
-% system programming
-%-------------------------------------------------------------------------------
-\end{resume}
 \end{document}
+
+
+%% end of file `template.tex'.
