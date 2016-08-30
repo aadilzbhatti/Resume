@@ -1,0 +1,184 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.2 (3/28/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute
+% (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Modified by:
+% Daniel L Marks <xleafr@gmail.com> 3/28/2015
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can have multiple style options the legal options ones are:
+%
+%   centered:	the name and address are centered at the top of the page
+%				(default)
+%
+%   line:		the name is the left with a horizontal line then the address to
+%				the right
+%
+%   overlapped:	the section titles overlap the body text (default)
+%
+%   margin:		the section titles are to the left of the body text
+%
+%   11pt:		use 11 point fonts instead of 10 point fonts
+%
+%   12pt:		use 12 point fonts instead of 10 point fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[margin]{res}
+
+% Default font is the helvetica postscript font
+\usepackage{helvet}
+
+% Increase text height
+\textheight=700pt
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\name{Aadil Bhatti}
+
+% Note that addresses can be used for other contact information:
+% -phone numbers
+% -email addresses
+% -linked-in profile
+
+\address{601 S. 6th St\\Apt 404\\Champaign, IL 61820\\}
+\address{abhatti2@illinois.edu\\847.363.0768\\linkedin.com/in/aadilbhatti}
+
+% Uncomment to add a third address
+%\address{Address 3 line 1\\Address 3 line 2\\Address 3 line 3}
+%-------------------------------------------------------------------------------
+
+\begin{resume}
+
+%-------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+\section{EDUCATION}
+\textbf{University of Illinois at Urbana-Champaign}, Urbana-Champaign, IL\\
+{\sl Bachelor of Science}, Mathematics and Computer Science, May 2017\hfill GPA: 3.31
+\\
+Minor in Chemistry
+\\
+\\
+\textbf{Courses}: Data Structures, Computer Architecture, System Programming,
+Algorithms \& Models of Computation, Numerical Methods, Programming Languages
+\& Compilers
+
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%-------------------------------------------------------------------------------
+\section{COMPUTER\\SKILLS}
+
+\textbf{Languages}: Java, Python, C++, C, Haskell, Ruby, MATLAB
+\\
+\textbf{Web Development}: HTML, CSS, JavaScript, Django, Ruby on Rails, SQL, Node,
+                          React, Meteor, jQuery, Knockout, D3
+\\
+\textbf{Mobile Development}: Android (Java, Android Studio),
+iOS (Swift, XCode)
+\\
+\textbf{Other Tools}: Git/GitHub, Amazon Web Services (EC2, S3, DynamoDB, Lambda),
+Arduino, Alexa Skills Kit (Amazon Echo)
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+% Modify the format of each position
+\begin{format}
+\title{l}\employer{r}\\
+\dates{l}\location{r}\\
+\body\\
+\end{format}
+%-------------------------------------------------------------------------------
+
+\section{EXPERIENCE}
+\employer{\textbf{Capital One}}
+\location{Urbana-Champaign, IL}
+\dates{February 2016 - Present}
+\title{\textbf{Software Engineering Intern}}
+\begin{position}
+Examined the utility of the Juju Charms service orchestration tool and its potential
+use within Capital One. Goal was to determine if Juju is a feasible tool for deploying
+applications to Amazon Web Services without needing extensive background knowledge as
+to how AWS works. Built simple web application in Django and deployed with Juju to
+illustrate how tool works and how to use it.
+\end{position}
+
+% \employer{\textbf{PillSense}}
+% \location{Chicago, IL}
+% \dates{May 2015 - Present}
+% \title{\textbf{Software Engineer}}
+% \begin{position}
+% PillSense is a healthcare startup devoted to tracking patient prescription adherence
+% data in order address prescription abuse. We are currently designing a web application,
+% a mobile application, and a sensor to track the weights of pill bottles. My role in the
+% startup was, as the sole software engineer in a team of five, to build the web application
+% for which care providers can access patient data.
+
+% \end{position}
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%-------------------------------------------------------------------------------
+\section{PROJECTS}
+
+\textbf{Linux in the Browser (under Prof. Lawrence Angrave)}
+\begin{itemize}
+  \item In-browser System Programming environment including C compiler \& terminal
+  \item Goal 1: Make C compiler / terminal more portable for developers to use
+  \item Goal 2: Develop Jupyter-like frontend as use case of environment
+  \item Built with \textbf{Node.js, Knockout.js, jOr1k}
+\end{itemize}
+
+\textbf{Chimr}:
+\begin{itemize}
+  \item ``Smart'' doorbell which alerts homeowner via SMS that someone is at door
+  \item Won \textbf{Best Use of Twilio API}
+  \item Use cases include notifying parents to let them know children home from school
+  \item Built with \textbf{Arduino, Python/Flask, Twilio API}
+\end{itemize}
+
+\par
+\textbf{Rapsheet}:
+\begin{itemize}
+  \item Full-stack web app to track \& analyze Twitter sentiment about Spotify albums
+  \item Goal to search for trends between Twitter user opinions \& album popularity
+  \item Built with \textbf{Python/Django, Spotify API, Alchemy API, and D3.js}
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+
+%   Interests
+%-------------------------------------------------------------------------------
+% \section{INTERESTS}
+% Web development, artificial intelligence, machine learning, numerical computing,
+% system programming
+%-------------------------------------------------------------------------------
+\end{resume}
+\end{document}

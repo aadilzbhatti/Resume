@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % modern themes
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -19,7 +19,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.85]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -56,31 +56,66 @@
 
 \vspace{6pt}
 \cventry
-{Expected May 2016}
+{Expected May 2017}
 {Mathematics \& Computer Science, Minor in Chemistry}
 {University of Illinois at Urbana-Champaign}
 {Champaign, IL}{}{GPA: 3.31}
 
-\section{Technical and Personal skills}
-\vspace{6pt}
+\section{Computer Skills}
+\vspace{5pt}
 \begin{itemize}
-\item \textbf{Programming Languages:} Proficient in: C, C++, Python, Matlab, Arduino, TeX \\ Also basic ability with: Assembly, VBA, VHDL.
-\vspace{6pt}
-\item \textbf{Industry Software Skills:} SolidWorks (Advanced), Matlab (Advanced), Ansys (Intermediate),  LTspice (Intermediate), Most MS Office products including MS project and MS access (Advanced).
-\vspace{6pt}
-\item \textbf{General Business Skills:} Good presentation skills, Works well in a team.
-\vspace{6pt}
-\item \textbf{Other:} Good soldering and spot welding skills, Can write well organised and structured reports.
+  \vspace{3pt}
+  \item
+    \textbf{Languages}: Java, Python, C++, C, Haskell, Ruby, MATLAB
+  \item
+    \textbf{Web Development}: HTML, CSS, JavaScript, Django, Ruby on Rails, Node,
+                              React, jQuery, D3
+  \item
+    \textbf{Mobile Development}: Android (Java, Android Studio), iOS (Swift, XCode)
+  \item
+    \textbf{Other Tools}: Git/GitHub, Amazon Web Services (EC2, S3, DynamoDB, Lambda),
+    Arduino, Alexa Skills Kit (Amazon Echo)
 \end{itemize}
 
-\section{Experience}
+\section{Work Experience}
 \vspace{6pt}
 
 \cventry
-{February 2016--May 2016}
-{Software Engineering Intern}
-{Capital One}
+{August 2016--Present}
+{\vspace{3pt}Undergraduate Teaching Assistant - CS 241}
+{University of Illinois}
 {Champaign, IL}{}
+{
+\begin{itemize}
+  \item Course assistant for undergraduate System Programming course
+  \item Developing programming assignments for students as well as course software
+        infrastructure such as testing, continuous integration, and autograding of
+        assignments
+\end{itemize}}
+
+\vspace{3pt}
+
+\cventry
+{May 2016--August 2016}
+{\vspace{3pt}Software Engineering Intern}
+{Capital One}
+{Champaign, IL}{Information Security \& Risk Management (ISRM)}
+{\vspace{3pt}
+\begin{itemize}
+  \item Worked with ISRM on mobile authentication project
+  \item Goal was to build a SDK for iOS/Android apps which generates persistent
+        Device ID for each user \& associates with username / password
+  \item Used to match devices with particular users; part of ``something you have''
+        factor of authentication
+\end{itemize}}
+
+\vspace{3pt}
+
+\cventry
+{February 2016--May 2016}
+{\vspace{3pt}Software Engineering Intern}
+{Capital One}
+{Champaign, IL}{Cloud Migration Strategy}
 {\vspace{3pt}
 \begin{itemize}
   \item Examined utility of Juju Charms service orchestration tool and potential
@@ -89,10 +124,38 @@
         applications to Amazon Web Services without needing extensive background
         knowledge of AWS
   \item Built simple web application in Django and deployed with Juju to
-        illustrate how tool works and how to use it
+        illustrate how tool works and how to use
 \end{itemize}}
 
-\vspace{2pt}
+\section{Projects}
+
+\vspace{5pt}
+\textbf{Linux in the Browser (under Prof. Lawrence Angrave)}
+\begin{itemize}
+  \item In-browser System Programming environment including C compiler \& terminal
+  \item Goal 1: Make C compiler / terminal more portable for developers to use
+  \item Goal 2: Develop Jupyter-like frontend as use case of environment
+  \item Built with \textbf{Node.js, Knockout.js, Jor1k}
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Chimr}
+\begin{itemize}
+  \item ``Smart'' doorbell which alerts homeowner via SMS that someone is at door
+  \item Won \textbf{Best Use of Twilio API} at WildHacks 2015
+  \item Use cases include notifying parents to let them know children home from school
+  \item Built with \textbf{Arduino, Python/Flask, Twilio API}
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Rapsheet}
+\begin{itemize}
+  \item Full-stack web app to track \& analyze Twitter sentiment about Spotify albums
+  \item Goal to search for trends between Twitter user opinions \& album popularity
+  \item Built with \textbf{Python/Django, Spotify API, Alchemy API, and D3.js}
+\end{itemize}
+
+% \vspace{2pt}
 
 % \section{Interests and extra-curricular activity}
 %
