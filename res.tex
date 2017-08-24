@@ -24,12 +24,13 @@
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 \usepackage{import}
+% \usepackage[colorlinks,urlcolor=blue]{hyperref}
 
 % personal data
 \name{Aadil}{Bhatti}
 \address{1737 Primrose Ln, Glenview, IL, 60026}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{1 (847) 363-0768}                   % optional, remove / comment the line if not wanted
-\email{abhatti2@illinois.edu}                               % optional, remove / comment the line if not wanted
+\email{aadilzbhatti@gmail.com}                               % optional, remove / comment the line if not wanted
 \homepage{linkedin.com/in/aadilbhatti}                         % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
@@ -54,15 +55,21 @@
 
 \section{Education}
 
-\vspace{6pt}
+\vspace{2pt}
 \cventry
-{Expected May 2017}
-{Mathematics \& Computer Science, Minor in Chemistry}
+{Expected May 2018}
+{Master of Engineering, Computer Science}
+{Cornell University}
+{Ithaca, NY}{}{}
+
+\cventry
+{May 2017}
+{Bachelors of Science, Mathematics \& Computer Science, Minor in Chemistry}
 {University of Illinois at Urbana-Champaign}
-{Champaign, IL}{}{Major GPA: 3.31}
+{Champaign, IL}{}{Major GPA: 3.23}
 
 \section{Computer Skills}
-\vspace{5pt}
+\vspace{2pt}
 \begin{itemize}
   \vspace{3pt}
   \item
@@ -73,34 +80,47 @@
   \item
     \textbf{Mobile Development}: Android (Java, Android Studio), iOS (Swift, XCode)
   \item
-    \textbf{Other Tools}: Git/GitHub, Amazon Web Services (EC2, S3, DynamoDB, Lambda),
-    Arduino, Alexa Skills Kit (Amazon Echo)
+    \textbf{Other Tools}: Git/GitHub, Amazon Web Services (EC2, S3, DynamoDB, Lambda, Elasticsearch, CloudFormation),
+     Alexa Skills Kit, Docker, Jenkins
 \end{itemize}
 
 \section{Work Experience}
-\vspace{6pt}
+\vspace{2pt}
 
 \cventry
-{August 2016--Present}
-{\vspace{3pt}Undergraduate Teaching Assistant - CS 241}
-{University of Illinois}
-{Champaign, IL}{}
+{June 2017--August 2017}
+{\vspace{3pt}Software Development Engineering Intern}
+{Amazon Web Services}
+{Seattle, WA}{SDKs \& Tools}
 {
 \begin{itemize}
-  \item Course assistant for undergraduate System Programming course
-  \item Developing programming assignments for students as well as course software
+  \item Joined the SDKs \& Tools team, responsible for building plugins, SDKs, and other tools for interacting with AWS services
+  \item Built a cross-product service to report plugin / tool crashes to the relevant development team
+  \item Developed service from scratch, and handled design phase, security check, and production launch
+\end{itemize}}
+
+\cventry
+{August 2016--May 2017}
+{\vspace{1pt}Undergraduate Teaching Assistant}
+{University of Illinois}
+{Champaign, IL}{System Programming}
+{
+\begin{itemize}
+  \item Developed programming assignments for students as well as course software
         infrastructure such as testing, continuous integration, and autograding of
         assignments
+  \item Initiated migration of grading infrastructure to Docker containers,
+        allowing for total isolation of student code as well as specific environment checks
 \end{itemize}}
 
 \vspace{3pt}
 
 \cventry
 {May 2016--August 2016}
-{\vspace{3pt}Software Engineering Intern}
+{\vspace{1pt}Software Engineering Intern}
 {Capital One}
 {Champaign, IL}{Information Security \& Risk Management (ISRM)}
-{\vspace{3pt}
+{\vspace{1pt}
 \begin{itemize}
   \item Built an SDK for iOS/Android apps which generates persistent
         Device ID for each user and associates with username / password.
@@ -109,34 +129,28 @@
         applications
 \end{itemize}}
 
-\vspace{3pt}
-
-\cventry
-{February 2016--May 2016}
-{\vspace{3pt}Software Engineering Intern}
-{Capital One}
-{Champaign, IL}{Cloud Migration Strategy}
-{\vspace{3pt}
-\begin{itemize}
-  \item Determined the feasibility of using ``Juju Charms'' tool kit
-        for deploying applications to Amazon Web Services without requiring extensive
-        knowledge of AWS
-  \item Built simple web application in Django and deployed with Juju
-        as part of evaluation process
-  \item Learned how to use various AWS services, app deployment and its roadblocks (scaling, security),
-        using open-source software in enterprise environment
-\end{itemize}}
+% \vspace{3pt}
 
 \section{Projects}
 
-\vspace{5pt}
+\vspace{2pt}
+\textbf{Distributed Systems}\newline
+\textit{Built several distributed applications in undergrad distributed systems course using Golang}
+\begin{itemize}
+\item A chat application using totally-ordered messaging and failure detection
+\item A distributed hash table based on Kademlia, a tree-based distributed hash table, including replication functionality
+\item A distributed transactional key-value store using two-phase commit and lock promotion to allow for concurrent transactions involving shared keys
+\end{itemize}
+
+\vspace{3pt}
 \textbf{\href{http://cs-education.github.io/sys/}{Linux in the Browser}}
 \begin{itemize}
   \item Developed under Professor Lawrence Angrave
   \item Worked on an in-browser System Programming IDE including C compiler \& terminal
-  \item Responsible for making C compiler / terminal more portable for developers to use
-        as well as developing Jupyter-like frontend as a use case of the IDE
-  \item Created with Node.js, React.js, Jor1k
+  \item Built a {\color{blue}\underline{\href{https://cs-education.github.io/elc-dev/}{front-end package}}} that transforms static code snippets into live, runnable
+        code using Linux in the Browser as a backend, made to be easy for developers to integrate into
+        webpages
+  \item Wrote and published {\color{blue}\underline{\href{https://www.ideals.illinois.edu/handle/2142/96030}{senior thesis}}} in Illinois Digital Environment for Access to Learning and Scholarship (IDEALS)
 \end{itemize}
 
 \vspace{3pt}
@@ -145,15 +159,6 @@
   \item Built a ``Smart'' doorbell which alerts homeowner via SMS that someone is at door
   \item Won Best Use of Twilio API at WildHacks 2015
   \item Designed for use cases including notifying parents to let them know children home from school
-  \item Created with Arduino, Python/Flask, Twilio API
-\end{itemize}
-
-\vspace{3pt}
-\textbf{Rapsheet}
-\begin{itemize}
-  \item Built a full-stack web app to track \& analyze Twitter sentiment about Spotify albums
-  \item Designed to search for trends between Twitter user opinions \& album popularity
-  \item Created with Python/Django, Spotify API, Alchemy API, and D3.js
 \end{itemize}
 
 % Publications from a BibTeX file without multibib
